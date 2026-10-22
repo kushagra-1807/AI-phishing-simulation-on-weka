@@ -19,10 +19,10 @@ Weka Explorer
 | SMO (RBF) | 93.80% | 0.936 |
 | Naive Bayes | 92.98% | 0.981 |
 
-Feature ranking by information gain (InfoGainAttributeEval with Ranker) is in results/InfoGain_ranking.txt. The top feature is SSLfinal_State (0.499).
+Feature ranking by information gain (InfoGainAttributeEval with Ranker) is in results/weka feature ranking.txt. The top feature is SSLfinal_State (0.499).
 
 ## Repeating the experiment
-1. Open Weka Explorer and load data/Training_Dataset.arff.
+1. Open Weka Explorer and load data/Training Dataset.arff.
 2. On the Classify tab, choose a classifier, select Cross-validation with 10 folds, and click Start.
 3. For the feature ranking, open Select attributes, choose InfoGainAttributeEval with the Ranker search, and click Start.
 
