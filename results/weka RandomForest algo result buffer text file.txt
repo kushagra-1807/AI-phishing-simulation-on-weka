@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     phishing
+Instances:    11055
+Attributes:   31
+              having_IP_Address
+              URL_Length
+              Shortining_Service
+              having_At_Symbol
+              double_slash_redirecting
+              Prefix_Suffix
+              having_Sub_Domain
+              SSLfinal_State
+              Domain_registeration_length
+              Favicon
+              port
+              HTTPS_token
+              Request_URL
+              URL_of_Anchor
+              Links_in_tags
+              SFH
+              Submitting_to_email
+              Abnormal_URL
+              Redirect
+              on_mouseover
+              RightClick
+              popUpWidnow
+              Iframe
+              age_of_domain
+              DNSRecord
+              web_traffic
+              Page_Rank
+              Google_Index
+              Links_pointing_to_page
+              Statistical_report
+              Result
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 1.18 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10752               97.2592 %
+Incorrectly Classified Instances       303                2.7408 %
+Kappa statistic                          0.9444
+Mean absolute error                      0.0509
+Root mean squared error                  0.1436
+Relative absolute error                 10.3113 %
+Root relative squared error             28.9156 %
+Total Number of Instances            11055     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.961    0.018    0.977      0.961    0.969      0.944    0.996     0.995     -1
+                 0.982    0.039    0.969      0.982    0.976      0.944    0.996     0.996     1
+Weighted Avg.    0.973    0.030    0.973      0.973    0.973      0.944    0.996     0.995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4705  193 |    a = -1
+  110 6047 |    b = 1
+

@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     phishing
+Instances:    11055
+Attributes:   31
+              having_IP_Address
+              URL_Length
+              Shortining_Service
+              having_At_Symbol
+              double_slash_redirecting
+              Prefix_Suffix
+              having_Sub_Domain
+              SSLfinal_State
+              Domain_registeration_length
+              Favicon
+              port
+              HTTPS_token
+              Request_URL
+              URL_of_Anchor
+              Links_in_tags
+              SFH
+              Submitting_to_email
+              Abnormal_URL
+              Redirect
+              on_mouseover
+              RightClick
+              popUpWidnow
+              Iframe
+              age_of_domain
+              DNSRecord
+              web_traffic
+              Page_Rank
+              Google_Index
+              Links_pointing_to_page
+              Statistical_report
+              Result
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10743               97.1777 %
+Incorrectly Classified Instances       312                2.8223 %
+Kappa statistic                          0.9427
+Mean absolute error                      0.0323
+Root mean squared error                  0.1443
+Relative absolute error                  6.5483 %
+Root relative squared error             29.0471 %
+Total Number of Instances            11055     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.962    0.020    0.974      0.962    0.968      0.943    0.989     0.989     -1
+                 0.980    0.038    0.970      0.980    0.975      0.943    0.989     0.987     1
+Weighted Avg.    0.972    0.030    0.972      0.972    0.972      0.943    0.989     0.988     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4710  188 |    a = -1
+  124 6033 |    b = 1
+

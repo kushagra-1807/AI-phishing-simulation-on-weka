@@ -1,0 +1,174 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     phishing
+Instances:    11055
+Attributes:   31
+              having_IP_Address
+              URL_Length
+              Shortining_Service
+              having_At_Symbol
+              double_slash_redirecting
+              Prefix_Suffix
+              having_Sub_Domain
+              SSLfinal_State
+              Domain_registeration_length
+              Favicon
+              port
+              HTTPS_token
+              Request_URL
+              URL_of_Anchor
+              Links_in_tags
+              SFH
+              Submitting_to_email
+              Abnormal_URL
+              Redirect
+              on_mouseover
+              RightClick
+              popUpWidnow
+              Iframe
+              age_of_domain
+              DNSRecord
+              web_traffic
+              Page_Rank
+              Google_Index
+              Links_pointing_to_page
+              Statistical_report
+              Result
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                    Class
+Variable                               -1
+=========================================
+having_IP_Address=1               -1.8082
+URL_Length=1                      -0.0289
+URL_Length=0                       0.2024
+URL_Length=-1                      0.0115
+Shortining_Service=-1             -1.4627
+having_At_Symbol=-1                0.6213
+double_slash_redirecting=1         0.0911
+Prefix_Suffix=1                  -91.2179
+having_Sub_Domain=-1               0.4908
+having_Sub_Domain=0                0.4996
+having_Sub_Domain=1               -0.9197
+SSLfinal_State=-1                  1.1595
+SSLfinal_State=1                  -2.1399
+SSLfinal_State=0                   2.8665
+Domain_registeration_length=1      0.4042
+Favicon=-1                        -0.8387
+port=-1                            0.6323
+HTTPS_token=1                      0.9241
+Request_URL=-1                     0.4265
+URL_of_Anchor=-1                    3.833
+URL_of_Anchor=0                   -1.1986
+URL_of_Anchor=1                   -2.9151
+Links_in_tags=1                   -0.2964
+Links_in_tags=-1                    0.895
+Links_in_tags=0                   -0.6305
+SFH=-1                              0.734
+SFH=1                             -0.5364
+SFH=0                             -0.8998
+Submitting_to_email=1              0.3555
+Abnormal_URL=1                      0.477
+Redirect=1                         1.1864
+on_mouseover=-1                    0.4572
+RightClick=-1                       0.224
+popUpWidnow=-1                    -0.1086
+Iframe=-1                         -0.5136
+age_of_domain=1                      0.07
+DNSRecord=1                       -1.5253
+web_traffic=-1                    -0.2627
+web_traffic=0                      1.4444
+web_traffic=1                     -0.8414
+Page_Rank=1                        -0.204
+Google_Index=-1                    1.3254
+Links_pointing_to_page=1          -0.8537
+Links_pointing_to_page=0           0.7494
+Links_pointing_to_page=-1          0.3996
+Statistical_report=1              -0.4812
+Intercept                          1.3806
+
+
+Odds Ratios...
+                                    Class
+Variable                               -1
+=========================================
+having_IP_Address=1                0.1639
+URL_Length=1                       0.9716
+URL_Length=0                       1.2244
+URL_Length=-1                      1.0116
+Shortining_Service=-1              0.2316
+having_At_Symbol=-1                1.8614
+double_slash_redirecting=1         1.0954
+Prefix_Suffix=1                         0
+having_Sub_Domain=-1               1.6337
+having_Sub_Domain=0                1.6481
+having_Sub_Domain=1                0.3986
+SSLfinal_State=-1                  3.1882
+SSLfinal_State=1                   0.1177
+SSLfinal_State=0                  17.5747
+Domain_registeration_length=1       1.498
+Favicon=-1                         0.4323
+port=-1                             1.882
+HTTPS_token=1                      2.5196
+Request_URL=-1                     1.5319
+URL_of_Anchor=-1                  46.2031
+URL_of_Anchor=0                    0.3016
+URL_of_Anchor=1                    0.0542
+Links_in_tags=1                    0.7435
+Links_in_tags=-1                   2.4472
+Links_in_tags=0                    0.5323
+SFH=-1                             2.0833
+SFH=1                              0.5848
+SFH=0                              0.4067
+Submitting_to_email=1              1.4269
+Abnormal_URL=1                     1.6112
+Redirect=1                         3.2753
+on_mouseover=-1                    1.5796
+RightClick=-1                      1.2511
+popUpWidnow=-1                     0.8971
+Iframe=-1                          0.5984
+age_of_domain=1                    1.0725
+DNSRecord=1                        0.2176
+web_traffic=-1                      0.769
+web_traffic=0                      4.2394
+web_traffic=1                      0.4311
+Page_Rank=1                        0.8154
+Google_Index=-1                    3.7638
+Links_pointing_to_page=1           0.4258
+Links_pointing_to_page=0           2.1157
+Links_pointing_to_page=-1          1.4912
+Statistical_report=1               0.6181
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10391               93.9937 %
+Incorrectly Classified Instances       664                6.0063 %
+Kappa statistic                          0.8781
+Mean absolute error                      0.0864
+Root mean squared error                  0.2105
+Relative absolute error                 17.5046 %
+Root relative squared error             42.3788 %
+Total Number of Instances            11055     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.923    0.047    0.940      0.923    0.932      0.878    0.987     0.985     -1
+                 0.953    0.077    0.940      0.953    0.946      0.878    0.987     0.989     1
+Weighted Avg.    0.940    0.064    0.940      0.940    0.940      0.878    0.987     0.987     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4521  377 |    a = -1
+  287 5870 |    b = 1
+
